@@ -1,0 +1,26 @@
+*{
+    background-color: #1b3d9f;
+}
+body{
+    text-align: center;
+    margin-top:120px;
+    padding-bottom: 0px;
+}
+img {
+    width:30%;
+}
+h1{
+    color:#f8283e;
+    font-size:30px;
+}
+.sparkle{
+    width:5%;
+    margin-left: 20%;
+}
+.sparkle2{
+    width:5%;
+    margin-left:80%;
+}
+p{
+    text-align: left;
+}
