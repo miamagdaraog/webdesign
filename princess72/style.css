@@ -1,0 +1,28 @@
+*{
+    background-color: #1b3d9f;
+}
+header{
+    text-align: center;
+    margin: 20px auto 40px auto;
+}
+h1{
+    color:#ff1e80;
+    font-size: 65px;
+}
+body{
+    text-align: center;
+}
+img{
+    width: 70%;
+}
+hr{
+    border-color: cornflowerblue;
+    margin: 50px 100px 0 100px;
+}
+.first{
+    color:#ff1e80;
+}
+h3{
+    color:whitesmoke;
+    font-size: larger;
+}
