@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#title {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/wallpaper.webp);
+    background-size: contain;
+    position: relative;
+}
+#titletext {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+h1 {
+    font-family: "Homemade Apple", cursive;
+    font-weight: 800;
+    font-style: normal; 
+    font-size: 40px;
+    color:rgb(110, 55, 15);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-shadow: 2px 2px #ffffff8e;
+}
+h2 {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;  
+    font-size: 27px;
+    color:rgb(110, 55, 15);
+    margin-top: 0;
+    padding-top: 0;
+    text-shadow: 2px 2px #ffffff7c;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 6px;
+    grid-row-gap: 0px;
+    position: relative;
+}
+    
+.div1 {
+    grid-area: 1 / 1 / 2 / 2; 
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+}
+p {
+    padding-left: 70px;
+    color:darkolivegreen;
+    margin-top:270px;
+    text-shadow: 2px 2px #ffffffab;
+}
+.div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    padding-top: 10px;
+}
+.fox1 {
+    height: 200px;
+    box-shadow: 7px 8px #38383898;
+    rotate: -1deg;
+}
+.stork1{
+    height: 300px;
+    box-shadow: 7px 8px #38383898;
+    position:relative;
+    left: 170px;
+    top: 20px;
+    rotate: 1deg;
+}
+.div3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    position: relative;
+}
+.envelope {
+    height: 250px;
+    margin-top: 270px;
+    margin-left: 100px;
+    position: absolute;
+    animation: moveletter 3s 0s infinite alternate;
+}
+@keyframes moveletter{
+    0% {top: 20px; right: 100px; opacity: 1;}
+    50% {top: 30px; right: 105px; 1;}
+    100% {top: 20px; right: 100px; opacity: 1;}
+}
+
+/*------ PAGE ONE -------- */
+
+#pageone {
+    background-image: url(images/paper.webp);
+}
+#letter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+h3{
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    color:darkolivegreen;
+    margin: 50px 200px 0 200px;
+    text-align: center;
+}
+.soup {
+    height: 400px;
+}
+#scroll {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+#letter h2 {
+    font-family: "Homemade Apple", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:rgba(79, 74, 68, 0.863);
+    margin: 150px 700px 0 0;
+    font-size: 50px;
+    text-shadow: none;
+}
+#scroll h2 {
+    font-family: "Homemade Apple", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:rgba(79, 74, 68, 0.863);
+    margin: 50px 0 0 700px;
+    font-size: 50px;
+    padding-bottom: 0;
+    text-shadow: none;
+}
+#scroll h4 {
+    font-family: "Homemade Apple", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:rgba(79, 74, 68, 0.863);
+    margin: 50px 0 0 650px;
+    font-size: 30px;
+    padding-bottom: 0;
+    text-shadow: none;
+}
+.btn {
+    color:rgba(79, 74, 68, 0.863);
+    text-decoration: none;
+}
+.btn:hover {
+    color:chocolate;
+}
+
+/*--------- PAGE TWO ----------*/
+
+#pagetwo {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/wallpaper.webp);
+    background-size: contain;
+    position: relative;
+}
+#pagetwo .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+#pagetwo .div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+.foxface {
+    height:750px;
+}
+#pagetwo .div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+#pagetwo .div2 p {
+    font-size: 60px;
+    font-weight: 600;
+    margin-right: 100px;
+    margin-top:100px;
+}
+.arrow {
+    height: 70px;
+    position:absolute;
+    bottom: 100px;
+    right:70px;
+    animation: movearrow 3s 0s infinite alternate;
+}
+@keyframes movearrow{
+    0% {bottom: 100px; right: 70px; opacity: 1;}
+    50% {bottom: 105px; right: 73px; 1;}
+    100% {bottom: 100px; right: 70px; opacity: 1;}
+}
+
+
+/*------- PAGE THREE --------*/
+
+#pagethree {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/wallpaper.webp);
+    background-size: contain;
+    position: relative;
+}
+#pagethree .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+#pagethree .div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+.storkface {
+    height:750px;
+}
+#pagethree .div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+#pagethree .div1 p {
+    font-size: 60px;
+    font-weight: 800;
+    margin-right: 100px;
+    margin-top:50px;
+}
+
+/*-------- PAGE FOUR --------*/
+
+#pagefour {
+    background-image: url(images/paper.webp);
+}
+#storkdinner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.arrow2 {
+    height: 90px;
+    position:sticky;
+    bottom: 130px;
+    left:1400px;
+    animation: movearrow 3s 0s infinite alternate;
+}
+#storkdinner h3 {
+    margin-top: 80px;
+    font-size:40px;
+}
+#pagefour h3 {
+    font-size:40px;
+}
+.dinner {
+    height: 400px;
+    margin-top: 70px;
+}
+.pair {
+    height: 550px;
+    margin-top: 20px;
+}
+
+/*-------- PAGE FIVE --------*/
+.line {
+    color: chocolate;
+    font-style:italic ;
+}
+.book .arrow {
+    height: 120px;
+}
